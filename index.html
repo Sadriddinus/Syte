@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="gh.css">
+    <link rel="stylesheet" href="./AllStyle/NormalizeCss.css"> -->
 </head>
-
-<body>
-    <a href="AllStyle/Lower.html">Power</a>
-    <script src="./scripts.js"></script>
+<style>
+    .flexelemnt{
+    width: 100px;
+    height: 30px;
+    background-color: lightgreen;
+    flex: 0 1 auto;
+}
+    .flexContainer{
+    background-color: black;
+    height: 2000px; 
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: start;
+    align-items: normal;
+}
+</style>
+<body class="flexContainer">
+    <button
+        onclick="document.body.appendChild(Object.assign(document.createElement('div'), {className: 'flexelemnt', textContent: ''}))">
+        Создай Меня!
+    </button>
 </body>
 </html>
