@@ -7,30 +7,13 @@
     <link rel="stylesheet" href="/AllStyle/gh.css">
     <link rel="stylesheet" href="/AllStyle/ghjs.js">
 </head>
-<style>
-    .flexelemnt{
-    width: 100px;
-    height: 30px;
-    background-color: lightgreen;
-    flex: 0 1 auto;
-}
-    .flexContainer{
-    background-color: black;
-    height: 100%; 
-    display: flex;
-    column-gap: 10px;
-    row-gap: 10px;
-    padding: 10px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: start;
-    align-items: normal;
-}
-</style>
-<body class="flexContainer">
-    <button
-        onclick="document.body.appendChild(Object.assign(document.createElement('div'), {className: 'flexelemnt', textContent: ''}))">
-        Создай Меня!
-    </button>
+<body>
+    <main class="flexContainer">
+        <button
+           onclick="document.querySelector('.flexContainer').appendChild(Object.assign(document.createElement('div'),
+            {className: 'flexelemnt', textContent: ''}))">
+            Создай меня
+        </button>
+    </main>
 </body>
 </html>
