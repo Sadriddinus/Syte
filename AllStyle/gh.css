@@ -1,6 +1,6 @@
 .flexContainer{
     background-color: black;
-    height: 2000px; 
+    height: 100vh; 
     display: flex;
     column-gap: 10px;
     row-gap: 10px;
